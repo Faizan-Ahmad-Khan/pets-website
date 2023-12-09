@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div#header {
+  background-color: chocolate;
+}
+div#logo {
+  margin-left: -30px;
+  padding-top: 10px;
+}
+
+div#navbar {
+  padding-left: 950px;
+  margin-top: -40px;
+  padding-bottom: 15px;
+  word-spacing: 20px;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20px;
+}
+li.list-items {
+  display: inline;
+  list-style-type: none;
+}
+a.list-links {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+}
+@media screen and (max-width: 1100px) {
+  div#navbar {
+    padding: 15px 5px;
+  }
+  #logo {
+    visibility: hidden;
+  }
+  li.list-items {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    border-bottom: 2px;
+  }
+}
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  #hero {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./Assets/Images/karsten-winegeart-qy0BHykaq0E-unsplash.jpg);
+    color: white;
+    text-align: center;
+    padding: 120px;
+  }
+
+  #hero-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  #hero-para {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  #hero-btn {
+    margin: 20px;
+    background-color: chocolate;
+    color: white;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  #hero-btn:hover {
+    border: 2px solid;
+  }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  #hero {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./Assets/Images/karsten-winegeart-qy0BHykaq0E-unsplash.jpg);
+    color: white;
+  }
+
+  #hero-heading {
+    font-size: 50px;
+    line-height: 100px;
+  }
+
+  #hero-para {
+    font-size: 25px;
+    padding-left: 80px;
+  }
+
+  #hero-btn {
+    margin-top: 30px;
+    margin-left: 268px;
+    background-color: chocolate;
+    color: white;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  #hero-btn:hover {
+    border: 2px solid;
+  }
+}
+
+#features {
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+}
+
+#features :hover {
+  width: 400px;
+}
+#feature-1 {
+  background-color: white;
+  width: 300px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#feature-1 > h1 {
+  text-align: center;
+  line-height: 60px;
+}
+
+#feature-2 {
+  background-color: white;
+  width: 300px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#feature-2 > h1 {
+  text-align: center;
+  line-height: 60px;
+}
+#feature-3 {
+  background-color: white;
+  width: 300px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#feature-3 > h1 {
+  text-align: center;
+  line-height: 60px;
+}
+
+section#about {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: chocolate;
+}
+
+div#about-us {
+  background-color: white;
+  height: 350px;
+  padding-left: 20px;
+  padding-top: 30px;
+  border-radius: 5px;
+  width: 950px;
+  overflow: hidden;
+}
+#about-us:hover {
+  background-color: chocolate;
+  color: white;
+}
+div#about-us > h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 90px;
+}
+#about-para {
+  font-size: 15px;
+  text-align: justify;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  #about {
+    font-size: 10px;
+  }
+}
+.contact {
+  padding: 40px;
+  height: 500px;
+  width: 400px;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-submit {
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 400px;
+  }
+}
+
+footer {
+  background-color: chocolate;
+}
+footer > p {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid rgb(227, 224, 224);
+  padding: 30px;
+}
